@@ -1,0 +1,25 @@
+a, b, c = [float(i) for i in input('Enter the value of a,b and c: ').split(' ')]
+print("The value of first side is :",a)
+print("The value of second side is: ",b)
+print("The value of thoird side is: ",c)
+print()
+if a+b>c:
+    print("These sides will form the  traingle")
+elif b+c>a:
+    print("These sides will form the traingle")
+elif a+c>b:
+    print("These sides will form the traingle:")
+else:
+    print("These sides will not form the traingle")
+if a==b==c:
+    print("This traingle is equilateral")
+elif (a==b) or(b==c):
+    print("The traingle is Isosceles traingle")
+else:
+    print("The traingle is scalene")
+# calculate the area
+s = (a + b + c) / 2
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area) #%0.2f:value will be taking after 2 points of decimal
+
+
