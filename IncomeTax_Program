@@ -1,0 +1,66 @@
+name=input("Enter your name please!") 
+def gender(M,F):
+    return M,F
+print("Select your Gender: ") 
+print("1. Male")
+print("2. Female")
+while True:
+  choice=input("enter choice(1/2): ")
+  if choice == "1":
+      def income(I):
+        return I
+      first_slab=500000
+      second_slab=1000000
+      salary=int(input("Enter your salary: "))
+      if salary <= first_slab:
+         print("you don't have to pay the tax")
+      elif (500000<salary<=750000):
+         tax1=(salary*15)/100
+         print("you have to pay the 15 percent of the tax ", tax1)
+      elif (750000<salary<= second_slab): 
+         tax2=(salary*20)/100
+         print("you have to pay the 20 percent of the tax ", tax2)
+      elif salary>second_slab:
+         tax3=(salary*25)/100
+         print("you have to pay the 25 percent of the tax",tax3)
+         print("your salary is:",income(salary))
+      next_calculation = input("Let's do next calculation? (yes/no): ")
+      if next_calculation == "no":
+          break
+      else:
+        print("Invalid Input")
+  else:
+    def income(I):
+        return I
+    first_slab=500000
+    second_slab=1000000
+    salary=int(input("Enter your salary: "))
+    print("your salary is:",income(salary))
+    if salary==first_slab:
+       print("you don't have to pay the tax")
+    elif (500000<salary<=750000):
+       tax1=(salary*15)/100
+       sal=tax1-60000
+       print("you have to pay the 15 percent of the tax ", sal)
+    elif (750000<salary<= second_slab):
+       tax2=(salary*20)/100
+       sal2=tax2-60000
+       print("you have to pay the 20 percent of the tax ", sal2)
+    elif salary>=second_slab:
+       tax3=(salary*25)/100
+       sal3=tax3-60000
+       print("you have to pay the 25 percent of the tax",sal3)
+    
+    next_calculation = input("Let's do next calculation? (yes/no): ")
+    if next_calculation == "no":
+          break
+    else:
+        print("Invalid Input")
+
+
+   
+    
+        
+
+
+
